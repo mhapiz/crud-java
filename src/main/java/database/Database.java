@@ -19,7 +19,7 @@ public class Database {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(URL, USER, PASS);
-            System.out.println("MAU KONEK");
+            System.out.println("Koneksi Berhasil!");
             return con;
         } catch (ClassNotFoundException | SQLException ex) {
             System.out.println(ex.toString());

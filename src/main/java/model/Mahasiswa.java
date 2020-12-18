@@ -89,7 +89,7 @@ public class Mahasiswa {
             while(rs.next()){
                 System.out.println(rs.getString("npm")+ "   | "+rs.getString("nama")+"     |  "+rs.getString("ipk")+"     |  "+rs.getString("jumlah_matkul") );
             }
-//            System.out.println("GOoD");
+//            System.out.println(selectQuery);
         }catch (SQLException ex){
             System.out.println(ex.toString());
         }
